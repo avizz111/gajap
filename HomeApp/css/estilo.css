@@ -1,0 +1,81 @@
+/*Zona del header*/
+header{
+    background-color:#6FAD7B ;
+    display: flex;
+    padding: 10px 24px;
+
+}
+
+#divicion{
+    display: flex;
+    gap: 1350px;
+}
+
+/*Anuncio*/
+
+#anuncio{
+    text-align: center;
+    padding: 50px;
+    img{
+        border: 2px solid #333; 
+        border-radius: 4px;
+    }
+}
+
+/*Intento de que quede*/
+
+.titulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding-top: 50px;
+}
+
+.fotos {
+            display: flex;
+            gap: 15px; /* Espacio entre las tarjetas/imágenes */
+            overflow-x: auto; /* Habilita el desplazamiento horizontal */
+            padding-bottom: 15px; /* Espacio para que la barra de desplazamiento no pegue con las imágenes */
+            scroll-behavior: smooth; /* Desplazamiento suave  */
+        }
+
+    
+        .fotos::-webkit-scrollbar {
+            height: 8px; /* Altura de la barra de desplazamiento horizontal */
+        }
+
+        .fotos::-webkit-scrollbar-track {
+            background: #e0e0e0; 
+            border-radius: 4px;
+        }
+
+        .fotos::-webkit-scrollbar-thumb {
+            background: #629c78; 
+            border-radius: 4px;
+        }
+
+        /* Estilo para cada elemento / tarjeta de imagen */
+        .tarjeta {
+            flex: 0 0 auto; /* Evita que las tarjetas se reduzcan de tamaño */
+            width: 250px;   
+            height: 250px;  
+            background-color: #fff;
+            border: 2px solid #333; 
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Asegura que la imagen llene el cuadro correctamente */
+        }
+
+
+footer{
+    padding-top: 100px;
+}
