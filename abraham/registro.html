@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Tu Deliciosa Vida Saludable - Registrate</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos Unificados Tipo App (Sin DIVs, Full-Screen) -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Pantalla completa tipo App Móvil/Desktop sin bordes grises */
+    html, body {
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      overflow: hidden;
+      background-color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* Contenedor Semántico Principal */
+    main {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 1.5rem;
+      position: relative;
+      background-color: #ffffff;
+    }
+
+    /* Marcos Esquineros Dorados Ornamentales */
+    article.ornament-corner {
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      pointer-events: none;
+    }
+
+    article.top-left {
+      top: 12px;
+      left: 12px;
+      border-top: 3px double #b8860b;
+      border-left: 3px double #b8860b;
+    }
+
+    article.top-right {
+      top: 12px;
+      right: 12px;
+      border-top: 3px double #b8860b;
+      border-right: 3px double #b8860b;
+    }
+
+    article.bottom-left {
+      bottom: 12px;
+      left: 12px;
+      border-bottom: 3px double #b8860b;
+      border-left: 3px double #b8860b;
+    }
+
+    article.bottom-right {
+      bottom: 12px;
+      right: 12px;
+      border-bottom: 3px double #b8860b;
+      border-right: 3px double #b8860b;
+    }
+
+    /* Sección Central de Contenido */
+    section.app-content {
+      width: 100%;
+      max-width: 440px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
+    }
+
+    /* Banner Superior de Frutas */
+    figure.fruit-banner {
+      width: 100%;
+      max-width: 320px;
+      margin: 0;
+      text-align: center;
+    }
+
+    figure.fruit-banner img {
+      width: 100%;
+      height: auto;
+      max-height: 22vh;
+      object-fit: contain;
+      display: block;
+    }
+
+    /* Título REGÍSTRATE */
+    h1.title-heading {
+      font-family: 'Cinzel', serif;
+      font-weight: 800;
+      color: #0d1b2a;
+      text-align: center;
+      font-size: clamp(1.4rem, 5vw, 1.9rem);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    /* Formulario de Registro */
+    form.register-form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    /* Campos y Etiquetas */
+    fieldset.input-group-custom {
+      border: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    label.field-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    input.form-control-custom {
+      width: 100%;
+      background-color: #dedede;
+      border: none;
+      border-radius: 20px;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.95rem;
+      color: #333333;
+      outline: none;
+      transition: background-color 0.2s ease;
+    }
+
+    input.form-control-custom:focus {
+      background-color: #d0d0d0;
+      box-shadow: 0 0 0 2px #046822;
+    }
+
+    /* Botón Registrar */
+    nav.form-action {
+      margin-top: 0.8rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    button.btn-register-submit {
+      width: 100%;
+      background-color: #046822;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    button.btn-register-submit:hover, button.btn-register-submit:active {
+      background-color: #034f19;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Elemento Semántico Principal que abarca toda la pantalla -->
+  <main>
+    
+    <!-- Esquinas ornamentales estilo marco dorado (sin etiquetas DIV) -->
+    <article class="ornament-corner top-left"></article>
+    <article class="ornament-corner top-right"></article>
+    <article class="ornament-corner bottom-left"></article>
+    <article class="ornament-corner bottom-right"></article>
+
+    <!-- Sección Central con Formulario -->
+    <section class="app-content">
+      
+      <!-- Banner de Frutas -->
+      <figure class="fruit-banner">
+        <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=800&q=80" alt="Frutas frescas variadas">
+      </figure>
+
+      <!-- Título de la pantalla -->
+      <h1 class="title-heading">Regístrate</h1>
+
+      <!-- Formulario Semántico de Registro -->
+      <form class="register-form" action="inicio.html" method="GET">
+        
+        <fieldset class="input-group-custom">
+          <label for="correo" class="field-label">Ingresa tu correo</label>
+          <input type="email" id="correo" name="correo" class="form-control-custom" required autocomplete="email">
+        </fieldset>
+
+        <fieldset class="input-group-custom">
+          <label for="confirmar_correo" class="field-label">Confirma tu correo</label>
+          <input type="email" id="confirmar_correo" name="confirmar_correo" class="form-control-custom" required autocomplete="email">
+        </fieldset>
+
+        <fieldset class="input-group-custom">
+          <label for="password" class="field-label">Ingresa tu contraseña</label>
+          <input type="password" id="password" name="password" class="form-control-custom" required autocomplete="new-password">
+        </fieldset>
+
+        <fieldset class="input-group-custom">
+          <label for="confirmar_password" class="field-label">Confirma tu contraseña</label>
+          <input type="password" id="confirmar_password" name="confirmar_password" class="form-control-custom" required autocomplete="new-password">
+        </fieldset>
+
+        <!-- Botón de Envío / Navegación hacia Inicio -->
+        <nav class="form-action">
+          <button type="submit" class="btn-register-submit">Registrar</button>
+        </nav>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
