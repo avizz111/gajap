@@ -1,0 +1,28 @@
+.bg-verde-avatar {
+            background-color: #8bbd9b;
+        }
+        .bg-verde-edit {
+            background-color: #8bbd9b;
+        }
+        .bg-verde-box {
+            background-color: #e2f0d9;
+            border: 2px solid #a2c8a7;
+        }
+        .bg-verde-boton {
+            background-color: #8bbd9b;
+            color: #ffffff;
+            border-radius: 12px;
+        }
+        .bg-verde-boton:hover {
+            background-color: #72a382;
+            color: #ffffff;
+        }
+        .bg-verde-btn-cierre {
+            background-color: #6d9375;
+            color: #ffffff;
+            border-radius: 12px;
+        }
+        .bg-verde-btn-cierre:hover {
+            background-color: #58795f;
+            color: #ffffff;
+        }
